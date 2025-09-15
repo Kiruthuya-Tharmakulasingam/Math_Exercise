@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial Calculator</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #5b00b7, #ff6600);
+        }
+
+        .calculator {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: #ffae00;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            width: 300px;
+            padding: 8px;
+            margin: 10px 0;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(to right, orange, gold);
+            border: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #result {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            color: white;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Factorial Calculator</h2>
+        <label for="number">Enter a number:</label><br><br>
+        <input type="number" id="number" min="0"><br><br>
+        <button onclick="calculateFactorial()">Calculate Factorial</button>
+        <div id="result"></div>
+
+    </div>
+</body>
+
+</html>
