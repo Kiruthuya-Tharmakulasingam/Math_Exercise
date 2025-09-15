@@ -1,3 +1,5 @@
+import { factorial } from "./mathModule.js";
+
 const input = document.getElementById("number");
 const button = document.getElementById("calcBtn");
 const resultbox = document.getElementById("result");
